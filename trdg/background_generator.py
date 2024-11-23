@@ -60,7 +60,7 @@ def image(height: int, width: int, image_dir: str) -> Image:
     Create a background with a image
     """
     images = os.listdir(image_dir)
-
+    
     if len(images) > 0:
         pic = Image.open(
             os.path.join(image_dir, images[rnd.randint(0, len(images) - 1)])
